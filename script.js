@@ -153,4 +153,35 @@ video.addEventListener("ended",()=>{
     screens.final.classList.add("active");
 
 });
+/* Floating Hearts */
+
+const heartContainer = document.getElementById("hearts");
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random()*100 + "%";
+
+    heart.style.fontSize = (15 + Math.random()*35) + "px";
+
+    heart.style.animationDuration = (6 + Math.random()*8) + "s";
+
+    heart.style.opacity = Math.random();
+
+    heartContainer.appendChild(heart);
+
+    setTimeout(()=>{
+
+        heart.remove();
+
+    },14000);
+
+}
+
+setInterval(createHeart,350);
 
