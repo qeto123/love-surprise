@@ -3,35 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>❤️ A Special Surprise ❤️</title>
+
+    <title>A Special Surprise ❤️</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Background -->
-    <div id="background"></div>
+<div id="background"></div>
+<div id="hearts"></div>
 
-    <!-- Floating Hearts -->
-    <div id="hearts"></div>
+<div class="container">
 
-    <!-- Main Card -->
-    <div class="card">
+    <!-- Welcome Screen -->
+    <section id="welcome" class="screen active">
 
-        <h1>❤️ Hey, My Love ❤️</h1>
+        <h1>❤️</h1>
 
-        <p class="subtitle">
-            I made something just for you...
-            <br><br>
-            Answer a few questions 😊
+        <h2>Hey...</h2>
+
+        <p>
+            I made something just for you.<br>
+            Please answer a few questions 😊
         </p>
 
-        <button id="startButton">
+        <button id="startBtn">
             Start ❤️
         </button>
 
+    </section>
+
+
+    <!-- Progress -->
+    <div id="progress">
+
+        <div id="progressBar"></div>
+
     </div>
+
+
+    <!-- Question Screen -->
+    <section id="questionScreen" class="screen">
+
+        <h2 id="question"></h2>
+
+        <div id="answers">
+
+        </div>
+
+    </section>
+
+
+    <!-- Video Screen -->
+    <section id="videoScreen" class="screen">
+
+        <h2>Your Surprise ❤️</h2>
+
+        <video id="loveVideo" controls>
+
+            <source src="assets/video.mp4" type="video/mp4">
+
+        </video>
+
+    </section>
+
+
+    <!-- Final Screen -->
+    <section id="finalScreen" class="screen">
+
+        <h1>❤️</h1>
+
+        <h2>Thank You</h2>
+
+        <p>
+
+            Every memory with you is special.
+
+            <br><br>
+
+            I love you ❤️
+
+        </p>
+
+    </section>
+
+</div>
 
 <script src="script.js"></script>
 
