@@ -184,4 +184,19 @@ function createHeart(){
 }
 
 setInterval(createHeart,350);
+const restartBtn = document.getElementById("restartBtn");
+
+restartBtn.addEventListener("click", () => {
+
+    currentQuestion = 0;
+
+    progressBar.style.width = "0%";
+
+    video.currentTime = 0;
+
+    screens.final.classList.remove("active");
+
+    screens.welcome.classList.add("active");
+
+});
 
